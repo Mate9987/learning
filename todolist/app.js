@@ -1,8 +1,3 @@
-
-
-
-
-
 const toDos = [];
 
 while (true) {
