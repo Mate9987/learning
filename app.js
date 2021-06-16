@@ -1,29 +1,59 @@
 const score = document.querySelector("#score")
-const firstPlayerScore =  document.querySelector('#firstPlayerScore');
-const secondPlayerScore = document.querySelector('#secondPlayerScore');
-let firstPlayerScoreInt = parseInt(firstPlayerScore.innerText);
+const playersNumber = prompt ("Type the number of players")
 
-// firstPlayerScore.addEventListener("click", ()=> console.log("1"))
-// secondPlayerScore.addEventListener("click", ()=> console.log("2"))
 
 const btn1 = document.querySelector("#btn1")
 const btn2 = document.querySelector("#btn2")
 const btnReset = document.querySelector("#btnReset")
 
-btn1.addEventListener("click", () => {
-    firstPlayerScoreInt++;
-    firstPlayerScore.innerText = firstPlayerScoreInt;
-    console.log(firstPlayerScoreInt)
-    console.log(score.value)
-})
+const scoreArray = [];
 
-btnReset.addEventListener("click", () => {
-    firstPlayerScoreInt = 0;
-    firstPlayerScore.innerText = firstPlayerScoreInt;
-})
+for(let i = 0; i < playersNumber; i++){
+const playerName = document.createElement("h2");
+playerName.innerText = `Player ${i+1}:`;
+document.querySelector("#playerNames").appendChild(playerName);
+const playerScore = document.createElement("h2");
+playerScore.innerText = '0';
+document.querySelector("#playerNames").appendChild(playerScore);
+const space = document.createElement("div");
+document.querySelector("#playerNames").appendChild(space);
+scoreArray.push(parseInt(playerScore.innerText))
 
-
-
-if(firstPlayerScoreInt === score.value){
-    console.log("player 1 won!")
+const newButton = document.createElement("button");
+newButton.innerText = `Player ${i+1} scored! (+1)`;
+document.querySelector("#buttons").appendChild(newButton);
 }
+
+
+
+// const resetButton = document.createElement("button");
+// resetButton.innerText = 'Reset';
+// document.querySelector("#buttons").appendChild(resetButton);
+
+
+// let firstPlayerScoreInt =   ;
+// const secondPlayerScore = document.querySelector('#secondPlayerScore');
+// let firstPlayerScoreInt = parseInt(firstPlayerScore.innerText);
+// let secondPlayerScoreInt = parseInt(secondPlayerScore.innerText);
+
+
+// btn1.addEventListener("click", () => {
+//     firstPlayerScoreInt++;
+//     firstPlayerScore.innerText = firstPlayerScoreInt;
+// })
+
+// btn2.addEventListener("click", () => {
+//     secondPlayerScoreInt++;
+//     secondPlayerScore.innerText = secondPlayerScoreInt;
+// })
+
+// btnReset.addEventListener("click", () => {
+//     firstPlayerScoreInt = 0;
+//     firstPlayerScore.innerText = firstPlayerScoreInt;
+//     secondPlayerScoreInt = 0;
+//     secondPlayerScore.innerText = secondPlayerScoreInt;
+// })
+
+
+
+
