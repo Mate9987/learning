@@ -27,32 +27,3 @@ for(let i = 0; i < playersNumber; i++){
         document.querySelectorAll('span')[i].innerText = allSpans[i]
     })
 }
-
-
-// const resetButton = document.createElement("button");
-// resetButton.innerText = 'Reset';
-// document.querySelector("#buttons").appendChild(resetButton);
-// let firstPlayerScoreInt =   ;
-// const secondPlayerScore = document.querySelector('#secondPlayerScore');
-// let firstPlayerScoreInt = parseInt(firstPlayerScore.innerText);
-// let secondPlayerScoreInt = parseInt(secondPlayerScore.innerText);
-// btn1.addEventListener("click", () => {
-//     firstPlayerScoreInt++;
-//     firstPlayerScore.innerText = firstPlayerScoreInt;
-// })
-
-// btn2.addEventListener("click", () => {
-//     secondPlayerScoreInt++;
-//     secondPlayerScore.innerText = secondPlayerScoreInt;
-// })
-
-// btnReset.addEventListener("click", () => {
-//     firstPlayerScoreInt = 0;
-//     firstPlayerScore.innerText = firstPlayerScoreInt;
-//     secondPlayerScoreInt = 0;
-//     secondPlayerScore.innerText = secondPlayerScoreInt;
-// })
-
-
-
-
