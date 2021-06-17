@@ -1,4 +1,3 @@
-// const score = document.querySelector("#score")
 const firstPlayerScore =  document.querySelector('#firstPlayerScore');
 const secondPlayerScore = document.querySelector('#secondPlayerScore');
 let firstPlayerScoreInt = parseInt(firstPlayerScore.innerText);
@@ -24,7 +23,3 @@ btnReset.addEventListener("click", () => {
     secondPlayerScoreInt = 0;
     secondPlayerScore.innerText = secondPlayerScoreInt;
 })
-
-
-
-
